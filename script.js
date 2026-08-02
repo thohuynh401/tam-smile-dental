@@ -211,25 +211,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   startAutoplay();
 
-  // ---------- BACK TO TOP BUTTON ----------
-  const backToTop = document.getElementById('backToTop');
 
-  const handleBackToTop = () => {
-    if (window.scrollY > 400) {
-      backToTop.classList.add('visible');
-    } else {
-      backToTop.classList.remove('visible');
-    }
-  };
-
-  window.addEventListener('scroll', handleBackToTop, { passive: true });
-
-  backToTop.addEventListener('click', () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
-  });
 
   // ---------- ACTIVE NAV LINK HIGHLIGHT ----------
   const sections = document.querySelectorAll('section[id]');

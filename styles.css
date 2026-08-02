@@ -2060,23 +2060,16 @@ ul { list-style: none; }
   position: fixed;
   bottom: 100px;
   right: 30px;
+  width: 44px;
   height: 44px;
-  padding: 0 16px 0 10px;
-  border-radius: 22px;
+  border-radius: 50%;
   background: var(--white);
   display: flex;
   align-items: center;
-  gap: 8px;
+  justify-content: center;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   z-index: 998;
   transition: all var(--transition-base);
-}
-
-.zalo-float span {
-  font-family: var(--font-heading);
-  font-weight: 700;
-  font-size: 0.95rem;
-  color: var(--gray-800);
 }
 
 .zalo-float:hover {
@@ -2171,11 +2164,10 @@ ul { list-style: none; }
     }
   }
 
-  .back-to-top {
-    bottom: calc(30px + env(safe-area-inset-bottom));
+  .zalo-float {
+    bottom: 90px;
+    right: 20px;
   }
-
-  /* Improve scrolling on iOS */
   .booking-modal {
     -webkit-overflow-scrolling: touch;
     padding-bottom: calc(2rem + env(safe-area-inset-bottom));
