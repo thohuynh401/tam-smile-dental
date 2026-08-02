@@ -2070,11 +2070,22 @@ ul { list-style: none; }
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   z-index: 998;
   transition: all var(--transition-base);
+  animation: zaloShake 5s infinite;
+}
+
+@keyframes zaloShake {
+  0%, 10% { transform: rotate(0deg); }
+  12% { transform: rotate(-15deg); }
+  14% { transform: rotate(15deg); }
+  16% { transform: rotate(-15deg); }
+  18% { transform: rotate(15deg); }
+  20%, 100% { transform: rotate(0deg); }
 }
 
 .zalo-float:hover {
   background: var(--gray-50);
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  animation: none;
 }
 
 /* ============================================
