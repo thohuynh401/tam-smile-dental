@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=5" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="description" content="Tâm Smile Dental Clinic - Nha Khoa hiện đại hàng đầu. Cấy ghép Implant, Niềng răng, Tẩy trắng răng với công nghệ tiên tiến và đội ngũ bác sĩ giàu kinh nghiệm." />
+  <meta name="keywords" content="nha khoa, dental clinic, implant, niềng răng, tẩy trắng, Tâm Smile" />
+  <meta name="robots" content="index, follow" />
+  <title>Tâm Smile Dental Clinic | Nụ Cười Tự Tin - Cuộc Sống Trọn Vẹn</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/logo.png" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ========== PAGE LOADER ========== -->
+  <div class="page-loader" id="pageLoader">
+    <div class="loader-spinner"></div>
+  </div>
+
+  <!-- ========== HEADER / NAVBAR ========== -->
+  <header class="header" id="header">
+    <div class="container">
+      <a href="#" class="logo" id="logo">
+        <img src="assets/images/logo.png" alt="Tâm Smile Dental Clinic Logo" />
+        <div class="logo-text">
+          Tâm Smile
+          <small>Dental Clinic</small>
+        </div>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#home">Trang Chủ</a>
+        <a href="#services">Dịch Vụ</a>
+        <a href="#about">Về Chúng Tôi</a>
+        <a href="#doctors">Bác Sĩ</a>
+        <a href="#testimonials">Đánh Giá</a>
+        <a href="javascript:void(0)" class="btn-primary btn-pulse" onclick="openBookingModal()">
+          <svg viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2zM9 14H7v-2h2v2zm4 0h-2v-2h2v2zm4 0h-2v-2h2v2zm-8 4H7v-2h2v2zm4 0h-2v-2h2v2zm4 0h-2v-2h2v2z"/></svg>
+          Đặt Lịch Hẹn
+        </a>
+      </nav>
+
+      <div class="nav-overlay" id="navOverlay"></div>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="dot"></span>
+          Nha Khoa Hiện Đại Hàng Đầu
+        </div>
+
+        <h1>
+          Nụ Cười Tự Tin,<br />
+          <span>Cuộc Sống Trọn Vẹn</span>
+        </h1>
+
+        <p class="hero-description">
+          Tại Tâm Smile, chúng tôi mang đến trải nghiệm nha khoa đẳng cấp với công nghệ hiện đại nhất, giúp bạn tự tin tỏa sáng mỗi ngày với nụ cười hoàn hảo.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="javascript:void(0)" class="btn-primary btn-pulse" onclick="openBookingModal()">
+            <svg viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2zM9 14H7v-2h2v2zm4 0h-2v-2h2v2zm4 0h-2v-2h2v2zm-8 4H7v-2h2v2zm4 0h-2v-2h2v2zm4 0h-2v-2h2v2z"/></svg>
+            Đặt Lịch Ngay
+            <svg viewBox="0 0 24 24" style="width:16px;height:16px"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+          </a>
+          <a href="tel:+84348580031" class="btn-outline">
+            <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+            Gọi Ngay
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-number"><span data-count="15">0</span>+</div>
+            <div class="stat-label">Năm Kinh Nghiệm</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number"><span data-count="10000">0</span>+</div>
+            <div class="stat-label">Khách Hàng</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number"><span data-count="99">0</span>%</div>
+            <div class="stat-label">Hài Lòng</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <div class="hero-image-wrapper">
+          <img src="assets/images/hero-dental.jpg" alt="Nụ cười tự tin tại Tâm Smile Dental Clinic" loading="eager" />
+        </div>
+
+        <!-- Floating Badges -->
+        <div class="floating-badge badge-top">
+          <div class="floating-badge-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+          </div>
+          <div class="floating-badge-text">
+            <strong>Chứng nhận ISO</strong>
+            <small>An toàn & Chất lượng</small>
+          </div>
+        </div>
+
+        <div class="floating-badge badge-bottom">
+          <div class="floating-badge-icon">
+            <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm3.5-9c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8 14 8.67 14 9.5s.67 1.5 1.5 1.5zm-7 0c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11zm3.5 6.5c2.33 0 4.31-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5z"/></svg>
+          </div>
+          <div class="floating-badge-text">
+            <strong>5 ★ Đánh giá</strong>
+            <small>Trên 2,000+ reviews</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SERVICES SECTION ========== -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-badge">
+          <svg viewBox="0 0 24 24"><path d="M20 6h-4V4c0-1.1-.9-2-2-2h-4c-1.1 0-2 .9-2 2v2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zM10 4h4v2h-4V4zm10 16H4V8h16v12z"/></svg>
+          Dịch Vụ
+        </div>
+        <h2 class="section-title">Dịch Vụ <span>Nha Khoa</span> Chuyên Nghiệp</h2>
+        <p class="section-subtitle">Chúng tôi cung cấp đầy đủ các dịch vụ nha khoa từ cơ bản đến chuyên sâu, đáp ứng mọi nhu cầu chăm sóc răng miệng của bạn.</p>
+      </div>
+
+      <div class="services-grid stagger-children">
+        <!-- Service 1: Implant -->
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/></svg>
+          </div>
+          <h3>Cấy Ghép Implant</h3>
+          <p>Phục hồi răng mất bằng công nghệ Implant tiên tiến từ Thụy Sĩ, bền vững như răng thật suốt đời.</p>
+          <a href="#" class="service-link">
+            Tìm hiểu thêm
+            <svg viewBox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+          </a>
+        </div>
+
+        <!-- Service 2: Braces -->
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm3.5-9c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8 14 8.67 14 9.5s.67 1.5 1.5 1.5zm-7 0c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11zm3.5 6.5c2.33 0 4.31-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5z"/></svg>
+          </div>
+          <h3>Niềng Răng Thẩm Mỹ</h3>
+          <p>Chỉnh nha với khay trong suốt Invisalign hoặc mắc cài sứ, mang lại hàm răng đều đẹp tự nhiên.</p>
+          <a href="#" class="service-link">
+            Tìm hiểu thêm
+            <svg viewBox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+          </a>
+        </div>
+
+        <!-- Service 3: Whitening -->
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24"><path d="M7 20h4c0 1.1-.9 2-2 2s-2-.9-2-2zm-2-1h8v-2H5v2zm11.5-9.5c0 3.82-2.66 5.86-3.77 6.5H5.27c-1.11-.64-3.77-2.68-3.77-6.5C1.5 5.36 5.36 1.5 9.5 1.5S17.5 5.36 17.5 9.5zm-4.16-2.66L9.5 3.92 5.66 6.84l1.47 4.52h4.74l1.47-4.52z"/></svg>
+          </div>
+          <h3>Tẩy Trắng Răng</h3>
+          <p>Công nghệ Laser Whitening từ Mỹ, trắng sáng tự nhiên lên đến 8 tông chỉ sau 45 phút.</p>
+          <a href="#" class="service-link">
+            Tìm hiểu thêm
+            <svg viewBox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+          </a>
+        </div>
+
+        <!-- Service 4: Veneer -->
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 3c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm7 13H5v-.23c0-.62.28-1.2.76-1.58C7.47 15.82 9.64 15 12 15s4.53.82 6.24 2.19c.48.38.76.97.76 1.58V19z"/></svg>
+          </div>
+          <h3>Mặt Dán Sứ Veneer</h3>
+          <p>Sứ Veneer siêu mỏng E.max từ Đức, che khuyết điểm hoàn hảo, mang lại nụ cười Hollywood.</p>
+          <a href="#" class="service-link">
+            Tìm hiểu thêm
+            <svg viewBox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+          </a>
+        </div>
+
+        <!-- Service 5: Treatment -->
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24"><path d="M19 8h-1V3H6v5H5c-1.66 0-3 1.34-3 3v6h4v4h12v-4h4v-6c0-1.66-1.34-3-3-3zM8 5h8v3H8V5zm8 14H8v-4h8v4zm2-4v-2H6v2H4v-4c0-.55.45-1 1-1h14c.55 0 1 .45 1 1v4h-2z"/></svg>
+          </div>
+          <h3>Điều Trị Tổng Quát</h3>
+          <p>Khám, vệ sinh, trám răng, điều trị tủy, nhổ răng khôn với phương pháp nhẹ nhàng, không đau.</p>
+          <a href="#" class="service-link">
+            Tìm hiểu thêm
+            <svg viewBox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+          </a>
+        </div>
+
+        <!-- Service 6: Pediatric -->
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24"><path d="M13 2v8h8c0-4.42-3.58-8-8-8zm6.32 13.89C20.37 14.54 21 12.84 21 11H6.44l-.95-2H2v2h2.22s1.89 4.07 2.12 4.42C5.51 16.17 5 17.29 5 18.5 5 20.43 6.57 22 8.5 22c1.76 0 3.22-1.3 3.46-3h2.08c.24 1.7 1.7 3 3.46 3 1.93 0 3.5-1.57 3.5-3.5 0-1.04-.46-1.97-1.18-2.61zM8.5 20c-.83 0-1.5-.67-1.5-1.5S7.67 17 8.5 17s1.5.67 1.5 1.5S9.33 20 8.5 20zm9 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg>
+          </div>
+          <h3>Nha Khoa Trẻ Em</h3>
+          <p>Không gian thân thiện, bác sĩ chuyên khoa nhi giúp bé yêu hết sợ nha sĩ và có hàm răng khỏe.</p>
+          <a href="#" class="service-link">
+            Tìm hiểu thêm
+            <svg viewBox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== COUNTER SECTION ========== -->
+  <section class="counter-section">
+    <div class="container">
+      <div class="counter-grid">
+        <div class="counter-item reveal">
+          <div class="counter-value"><span data-count="15">0</span>+</div>
+          <div class="counter-label">Năm Kinh Nghiệm</div>
+        </div>
+        <div class="counter-item reveal">
+          <div class="counter-value"><span data-count="10000">0</span>+</div>
+          <div class="counter-label">Khách Hàng Tin Tưởng</div>
+        </div>
+        <div class="counter-item reveal">
+          <div class="counter-value"><span data-count="25">0</span>+</div>
+          <div class="counter-label">Bác Sĩ Chuyên Khoa</div>
+        </div>
+        <div class="counter-item reveal">
+          <div class="counter-value"><span data-count="99">0</span>%</div>
+          <div class="counter-label">Tỷ Lệ Hài Lòng</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT / WHY CHOOSE US ========== -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-image reveal-left">
+        <img src="assets/images/clinic-interior.jpg" alt="Phòng khám nha khoa hiện đại Tâm Smile" loading="lazy" />
+        <div class="experience-badge">
+          <div class="number">15+</div>
+          <div class="text">Năm Kinh Nghiệm</div>
+        </div>
+      </div>
+
+      <div class="about-content">
+        <div class="section-badge reveal">
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          Tại Sao Chọn Chúng Tôi
+        </div>
+        <h2 class="section-title reveal">Nha Khoa <span>Tâm Smile</span> — Nơi Bạn An Tâm Gửi Gắm Nụ Cười</h2>
+        <p class="section-subtitle reveal">Với hơn 15 năm kinh nghiệm, Tâm Smile tự hào là địa chỉ nha khoa uy tín được hàng ngàn khách hàng tin tưởng lựa chọn.</p>
+
+        <div class="features-list">
+          <div class="feature-item reveal">
+            <div class="feature-check">
+              <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+            </div>
+            <div>
+              <h4>Công Nghệ Hiện Đại Nhất</h4>
+              <p>Trang bị máy CT Cone Beam 3D, Laser, Camera nội soi số từ các thương hiệu hàng đầu thế giới.</p>
+            </div>
+          </div>
+
+          <div class="feature-item reveal">
+            <div class="feature-check">
+              <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+            </div>
+            <div>
+              <h4>Đội Ngũ Bác Sĩ Giàu Kinh Nghiệm</h4>
+              <p>100% bác sĩ có chứng chỉ chuyên khoa, được đào tạo tại các trường đại học y hàng đầu.</p>
+            </div>
+          </div>
+
+          <div class="feature-item reveal">
+            <div class="feature-check">
+              <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+            </div>
+            <div>
+              <h4>Tiệt Trùng Tuyệt Đối</h4>
+              <p>Quy trình tiệt trùng đạt chuẩn ISO, đảm bảo an toàn tuyệt đối cho mọi ca điều trị.</p>
+            </div>
+          </div>
+
+          <div class="feature-item reveal">
+            <div class="feature-check">
+              <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+            </div>
+            <div>
+              <h4>Bảo Hành Trọn Đời</h4>
+              <p>Cam kết bảo hành dài hạn cho các dịch vụ Implant, Veneer, và phục hình răng sứ.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== DOCTORS SECTION ========== -->
+  <section class="doctors" id="doctors">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-badge">
+          <svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+          Đội Ngũ
+        </div>
+        <h2 class="section-title">Đội Ngũ <span>Bác Sĩ</span> Tận Tâm</h2>
+        <p class="section-subtitle">Các bác sĩ của chúng tôi đều được đào tạo bài bản, giàu kinh nghiệm và luôn đặt sức khỏe bệnh nhân lên hàng đầu.</p>
+      </div>
+
+      <div class="doctors-grid stagger-children">
+        <!-- Doctor 1 -->
+        <div class="doctor-card reveal">
+          <div class="doctor-image">
+            <img src="assets/images/doctor-male.jpg" alt="BS. Nguyễn Văn Tâm" loading="lazy" />
+            <div class="doctor-image-overlay"></div>
+          </div>
+          <div class="doctor-info">
+            <h3>BS. CKI Nguyễn Văn Tâm</h3>
+            <p class="doctor-specialty">Chuyên khoa Implant & Phục hình</p>
+            <p class="doctor-desc">Hơn 15 năm kinh nghiệm trong cấy ghép Implant. Tốt nghiệp Đại học Y Dược TP.HCM.</p>
+            <div class="doctor-social">
+              <a href="#" aria-label="Facebook">
+                <svg viewBox="0 0 24 24"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/></svg>
+              </a>
+              <a href="#" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Doctor 2 -->
+        <div class="doctor-card reveal">
+          <div class="doctor-image">
+            <img src="assets/images/doctor-female.jpg" alt="BS. Trần Thị Minh Anh" loading="lazy" />
+            <div class="doctor-image-overlay"></div>
+          </div>
+          <div class="doctor-info">
+            <h3>BS. CKII Trần Thị Minh Anh</h3>
+            <p class="doctor-specialty">Chuyên khoa Chỉnh nha & Thẩm mỹ</p>
+            <p class="doctor-desc">Chuyên gia niềng răng trong suốt hàng đầu. Tốt nghiệp Thạc sĩ tại Đại học Mahidol, Thái Lan.</p>
+            <div class="doctor-social">
+              <a href="#" aria-label="Facebook">
+                <svg viewBox="0 0 24 24"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/></svg>
+              </a>
+              <a href="#" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TESTIMONIALS SECTION ========== -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-badge">
+          <svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H6l-2 2V4h16v12z"/></svg>
+          Đánh Giá
+        </div>
+        <h2 class="section-title">Khách Hàng <span>Nói Gì</span> Về Chúng Tôi</h2>
+        <p class="section-subtitle">Hàng ngàn khách hàng đã tin tưởng và lựa chọn Tâm Smile. Hãy lắng nghe chia sẻ từ họ.</p>
+      </div>
+
+      <div class="testimonial-slider reveal-scale" id="testimonialSlider">
+        <div class="testimonial-track" id="testimonialTrack">
+          <!-- Testimonial 1 -->
+          <div class="testimonial-card">
+            <div class="testimonial-inner">
+              <div class="testimonial-quote">"</div>
+              <div class="testimonial-stars">
+                <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              </div>
+              <p class="testimonial-text">
+                "Mình đã cấy ghép Implant tại Tâm Smile và thực sự rất hài lòng. Bác sĩ Tâm rất tận tâm, giải thích cặn kẽ từng bước. Phòng khám sạch sẽ, hiện đại. Giờ mình tự tin cười tươi rồi!"
+              </p>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar">
+                  <img src="assets/images/patient-1.jpg" alt="Chị Nguyễn Thị Hoa" loading="lazy" />
+                </div>
+                <div class="testimonial-author-info">
+                  <h4>Chị Nguyễn Thị Hoa</h4>
+                  <p>Khách hàng Implant</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="testimonial-card">
+            <div class="testimonial-inner">
+              <div class="testimonial-quote">"</div>
+              <div class="testimonial-stars">
+                <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              </div>
+              <p class="testimonial-text">
+                "Con trai tôi rất sợ nha sĩ, nhưng khi đến Tâm Smile thì bé vui vẻ hợp tác. Các bác sĩ ở đây rất kiên nhẫn và thân thiện với trẻ nhỏ. Cảm ơn Tâm Smile rất nhiều!"
+              </p>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar">
+                  <img src="assets/images/patient-2.jpg" alt="Anh Trần Đức Minh" loading="lazy" />
+                </div>
+                <div class="testimonial-author-info">
+                  <h4>Anh Trần Đức Minh</h4>
+                  <p>Phụ huynh - Nha khoa trẻ em</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="testimonial-card">
+            <div class="testimonial-inner">
+              <div class="testimonial-quote">"</div>
+              <div class="testimonial-stars">
+                <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              </div>
+              <p class="testimonial-text">
+                "Sau khi niềng răng Invisalign tại Tâm Smile, mình không còn tự ti khi cười nữa. Bác sĩ Minh Anh rất chuyên nghiệp và đã thiết kế lộ trình phù hợp nhất cho mình. Kết quả ngoài mong đợi!"
+              </p>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar">
+                  <img src="assets/images/patient-3.jpg" alt="Chị Lê Phương Thảo" loading="lazy" />
+                </div>
+                <div class="testimonial-author-info">
+                  <h4>Chị Lê Phương Thảo</h4>
+                  <p>Khách hàng niềng răng Invisalign</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slider Controls -->
+        <div class="slider-controls">
+          <button class="slider-btn" id="prevBtn" aria-label="Previous testimonial">
+            <svg viewBox="0 0 24 24"><path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6z"/></svg>
+          </button>
+          <div class="slider-dots" id="sliderDots">
+            <button class="slider-dot active" data-index="0" aria-label="Slide 1"></button>
+            <button class="slider-dot" data-index="1" aria-label="Slide 2"></button>
+            <button class="slider-dot" data-index="2" aria-label="Slide 3"></button>
+          </div>
+          <button class="slider-btn" id="nextBtn" aria-label="Next testimonial">
+            <svg viewBox="0 0 24 24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA / BOOKING SECTION ========== -->
+  <section class="cta" id="contact">
+    <div class="container">
+      <div class="cta-card reveal-scale">
+        <h2>Sẵn Sàng Cho Nụ Cười Hoàn Hảo?</h2>
+        <p>Đặt lịch khám miễn phí ngay hôm nay để được tư vấn bởi đội ngũ bác sĩ hàng đầu của Tâm Smile.</p>
+        <div class="cta-buttons">
+          <a href="javascript:void(0)" class="btn-white" onclick="openBookingModal()">
+            <svg viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2zM9 14H7v-2h2v2zm4 0h-2v-2h2v2zm4 0h-2v-2h2v2zm-8 4H7v-2h2v2zm4 0h-2v-2h2v2zm4 0h-2v-2h2v2z"/></svg>
+            Đặt Lịch Miễn Phí
+          </a>
+          <a href="tel:+84348580031" class="btn-ghost">
+            <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+            Gọi: 034 858 0031
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Footer Brand -->
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <img src="assets/images/logo.png" alt="Tâm Smile Logo" style="height:42px" />
+            <div class="logo-text">
+              Tâm Smile
+              <small>Dental Clinic</small>
+            </div>
+          </a>
+          <p>Nha khoa hiện đại hàng đầu với sứ mệnh mang đến nụ cười tự tin và cuộc sống trọn vẹn cho mỗi khách hàng.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook">
+              <svg viewBox="0 0 24 24"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/></svg>
+            </a>
+            <a href="#" aria-label="Instagram">
+              <svg viewBox="0 0 24 24"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"/></svg>
+            </a>
+            <a href="#" aria-label="YouTube">
+              <svg viewBox="0 0 24 24"><path d="M10 15l5.19-3L10 9v6m11.56-7.83c.13.47.22 1.1.28 1.9.07.8.1 1.49.1 2.09L22 12c0 2.19-.16 3.8-.44 4.83-.25.9-.83 1.48-1.73 1.73-.47.13-1.33.22-2.65.28-1.3.07-2.49.1-3.59.1L12 19c-4.19 0-6.8-.16-7.83-.44-.9-.25-1.48-.83-1.73-1.73-.13-.47-.22-1.1-.28-1.9-.07-.8-.1-1.49-.1-2.09L2 12c0-2.19.16-3.8.44-4.83.25-.9.83-1.48 1.73-1.73.47-.13 1.33-.22 2.65-.28 1.3-.07 2.49-.1 3.59-.1L12 5c4.19 0 6.8.16 7.83.44.9.25 1.48.83 1.73 1.73z"/></svg>
+            </a>
+            <a href="#" aria-label="TikTok">
+              <svg viewBox="0 0 24 24"><path d="M16.6 5.82s.51.5 0 0A4.278 4.278 0 0 1 15.54 3h-3.09v12.4a2.592 2.592 0 0 1-2.59 2.5c-1.42 0-2.6-1.16-2.6-2.6 0-1.72 1.66-3.01 3.37-2.48V9.66c-3.45-.46-6.47 2.22-6.47 5.64 0 3.33 2.76 5.7 5.69 5.7 3.14 0 5.69-2.55 5.69-5.7V9.01a7.35 7.35 0 0 0 4.3 1.38V7.3s-1.88.09-3.24-1.48z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Footer Links -->
+        <div class="footer-col">
+          <h4>Dịch Vụ</h4>
+          <ul>
+            <li><a href="#">Cấy Ghép Implant</a></li>
+            <li><a href="#">Niềng Răng Invisalign</a></li>
+            <li><a href="#">Tẩy Trắng Răng</a></li>
+            <li><a href="#">Mặt Dán Sứ Veneer</a></li>
+            <li><a href="#">Nha Khoa Trẻ Em</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Giờ Làm Việc</h4>
+          <ul>
+            <li><a href="#">
+              <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+              T2 - T6: 8:00 - 19:00
+            </a></li>
+            <li><a href="#">
+              <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+              T7, CN: 8:00 - 16:00
+            </a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Liên Hệ</h4>
+          <ul>
+            <li><a href="https://www.google.com/maps/place/Nha+khoa+T%C3%A2m+Smile/@10.8814154,106.6793066,16.64z/data=!4m6!3m5!1s0x3174d79c68778569:0x769b9454afc70d18!8m2!3d10.881241!4d106.6792664!16s%2Fg%2F11xf14426_?entry=ttu" target="_blank">
+              <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+              607 Hà Huy Giáp, Q.12, TP.HCM
+            </a></li>
+            <li><a href="tel:+84348580031">
+              <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+              034 858 0031
+            </a></li>
+            <li><a href="https://zalo.me/0348580031" target="_blank">
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/></svg>
+              Zalo: 034 858 0031
+            </a></li>
+            <li><a href="mailto:contact@nhakhoatamsmile.com">
+              <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+              contact@nhakhoatamsmile.com
+            </a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2024 Tâm Smile Dental Clinic. All rights reserved.</p>
+        <p>Designed with ❤️ by <a href="#">Tâm Smile Team</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== BACK TO TOP BUTTON ========== -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg viewBox="0 0 24 24"><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/></svg>
+  </button>
+
+  <!-- ========== FLOATING ZALO BUTTON ========== -->
+  <a href="https://zalo.me/0348580031" target="_blank" class="zalo-float" id="zaloFloat" aria-label="Chat Zalo">
+    <svg viewBox="0 0 48 48" width="28" height="28">
+      <path fill="#0068FF" d="M24 4.5c-10.7 0-19.5 8.8-19.5 19.5 0 5.4 2.2 10.3 5.7 13.9l-2 5.9c-.3 1 1 1.9 1.9 1.4l6.1-3.6c2.4 1.2 5 1.9 7.8 1.9 10.7 0 19.5-8.8 19.5-19.5S34.7 4.5 24 4.5z"/>
+      <text x="24" y="30" text-anchor="middle" font-size="16" font-weight="bold" fill="white" font-family="Arial, sans-serif">Zalo</text>
+    </svg>
+    <span>Chat Zalo</span>
+  </a>
+
+  <!-- ========== FLOATING MAP WIDGET ========== -->
+  <div class="map-widget" id="mapWidget">
+    <button class="map-widget-toggle" id="mapToggle" aria-label="Xem bản đồ">
+      <svg viewBox="0 0 24 24" width="20" height="20"><path fill="white" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+      <span>Bản đồ</span>
+    </button>
+    <div class="map-widget-panel" id="mapPanel">
+      <div class="map-widget-header">
+        <div class="map-widget-info">
+          <strong>Tâm Smile Dental Clinic</strong>
+          <div class="map-widget-stars">
+            <span>★★★★★</span>
+            <span class="map-rating">5.0</span>
+          </div>
+          <p>607 Hà Huy Giáp, An Phú Đông, Quận 12, TP.HCM</p>
+        </div>
+        <button class="map-widget-close" id="mapClose" aria-label="Đóng bản đồ">✕</button>
+      </div>
+      <div class="map-widget-iframe">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1959.2!2d106.6792664!3d10.881241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d79c68778569%3A0x769b9454afc70d18!2sNha%20khoa%20T%C3%A2m%20Smile!5e0!3m2!1svi!2s!4v1700000000000" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <a href="https://www.google.com/maps/place/Nha+khoa+T%C3%A2m+Smile/@10.8814154,106.6793066,16.64z/data=!4m6!3m5!1s0x3174d79c68778569:0x769b9454afc70d18!8m2!3d10.881241!4d106.6792664!16s%2Fg%2F11xf14426_?entry=ttu" target="_blank" class="map-widget-directions">
+        <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M21.71 11.29l-9-9a.996.996 0 0 0-1.41 0l-9 9a.996.996 0 0 0 0 1.41l9 9c.39.39 1.02.39 1.41 0l9-9a.996.996 0 0 0 0-1.41zM14 14.5V12h-4v3H8v-4c0-.55.45-1 1-1h5V7.5l3.5 3.5-3.5 3.5z"/></svg>
+        Xem đánh giá & Chỉ đường
+      </a>
+    </div>
+  </div>
+
+  <!-- ========== BOOKING MODAL ========== -->
+  <div class="booking-overlay" id="bookingOverlay"></div>
+  <div class="booking-modal" id="bookingModal">
+    <button class="booking-modal-close" id="bookingClose" aria-label="Đóng">
+      <svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+    </button>
+    <div class="booking-modal-header">
+      <div class="booking-modal-icon">
+        <svg viewBox="0 0 24 24" width="32" height="32"><path fill="white" d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2zM9 14H7v-2h2v2zm4 0h-2v-2h2v2zm4 0h-2v-2h2v2zm-8 4H7v-2h2v2zm4 0h-2v-2h2v2zm4 0h-2v-2h2v2z"/></svg>
+      </div>
+      <h2>Đặt Lịch Khám</h2>
+      <p>Điền thông tin bên dưới, chúng tôi sẽ liên hệ xác nhận trong thời gian sớm nhất.</p>
+    </div>
+    <form id="bookingForm" action="https://formsubmit.co/thohuynh404@gmail.com" method="POST">
+      <!-- FormSubmit config -->
+      <input type="hidden" name="_subject" value="[Booking] - Bạn có lịch hẹn mới từ website Tâm Smile">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_next" id="formNextUrl">
+      <input type="text" name="_honey" style="display:none">
+      <input type="hidden" name="Thông báo" value="Vừa có bệnh nhân đặt lịch khám nội dung như sau :">
+
+      <div class="form-group">
+        <label for="bookingName">
+          <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+          Họ và Tên <span class="required">*</span>
+        </label>
+        <input type="text" id="bookingName" name="Họ và Tên" placeholder="Nguyễn Văn A" required>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="bookingYear">
+            <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm3.5-9c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8 14 8.67 14 9.5s.67 1.5 1.5 1.5zm-7 0c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11zm3.5 6.5c2.33 0 4.31-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5z"/></svg>
+            Năm Sinh <span class="required">*</span>
+          </label>
+          <input type="number" id="bookingYear" name="Năm Sinh" placeholder="1990" min="1920" max="2025" required>
+        </div>
+        <div class="form-group">
+          <label for="bookingDate">
+            <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10z"/></svg>
+            Ngày Khám <span class="required">*</span>
+          </label>
+          <input type="date" id="bookingDate" name="Ngày Khám" required>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="bookingPhone">
+          <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+          Số Điện Thoại <span class="required">*</span>
+        </label>
+        <input type="tel" id="bookingPhone" name="Số Điện Thoại" placeholder="0348 580 031" required>
+      </div>
+
+      <div class="form-group">
+        <label for="bookingNotes">
+          <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34a.9959.9959 0 0 0-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/></svg>
+          Ghi Chú
+        </label>
+        <textarea id="bookingNotes" name="Ghi Chú" rows="3" placeholder="Triệu chứng, dịch vụ quan tâm, hoặc yêu cầu đặc biệt..."></textarea>
+      </div>
+
+      <button type="submit" class="btn-primary btn-submit" id="bookingSubmit">
+        <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z"/></svg>
+        Xác Nhận Đặt Lịch
+      </button>
+    </form>
+    <div class="booking-success" id="bookingSuccess" style="display:none;">
+      <div class="success-icon">
+        <svg viewBox="0 0 24 24" width="64" height="64"><path fill="#2cb742" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+      </div>
+      <h3>Đặt Lịch Thành Công! 🎉</h3>
+      <p>Cảm ơn bạn đã tin tưởng Tâm Smile. Chúng tôi sẽ liên hệ xác nhận lịch hẹn trong thời gian sớm nhất.</p>
+      <button class="btn-primary" onclick="closeBookingModal()">Đóng</button>
+    </div>
+  </div>
+
+  <!-- ========== JAVASCRIPT ========== -->
+  <script src="script.js"></script>
+</body>
+</html>
