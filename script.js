@@ -58,6 +58,16 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // ---------- SMOOTH SCROLL ----------
+  // ---------- LOGO SCROLL TO TOP ----------
+  document.querySelectorAll('.logo').forEach(logo => {
+    logo.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  });
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', (e) => {
       e.preventDefault();
