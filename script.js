@@ -142,7 +142,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const nextBtn = document.getElementById('nextBtn');
   const dots = document.querySelectorAll('.slider-dot');
   let currentSlide = 0;
-  const totalSlides = 3;
+  const totalSlides = 4;
   let autoplayInterval;
 
   const updateSlider = (index) => {
