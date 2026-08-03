@@ -308,45 +308,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // Form submission via AJAX to avoid page redirect
-  bookingForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-
-    const submitBtn = document.getElementById('bookingSubmit');
-    const originalText = submitBtn.innerHTML;
-    submitBtn.innerHTML = '<span class="loader-spinner" style="width:20px;height:20px;border-width:2px;display:inline-block;vertical-align:middle;margin-right:8px;"></span> Đang gửi...';
-    submitBtn.disabled = true;
-
-    const formData = new FormData(bookingForm);
-
-    fetch(bookingForm.action, {
-      method: 'POST',
-      body: formData,
-      headers: {
-        'Accept': 'application/json'
-      }
-    })
-    .then(response => {
-      if (response.ok || response.status === 200) {
-        // Show success message
-        bookingForm.style.display = 'none';
-        bookingSuccess.style.display = 'block';
-        bookingForm.reset();
-      } else {
-        throw new Error('Form submission failed');
-      }
-    })
-    .catch(error => {
-      // Still show success as formsubmit.co might redirect
-      bookingForm.style.display = 'none';
-      bookingSuccess.style.display = 'block';
-      bookingForm.reset();
-    })
-    .finally(() => {
-      submitBtn.innerHTML = originalText;
-      submitBtn.disabled = false;
-    });
-  });
+  // Form submission uses native HTML form action to support Formsubmit activation and captcha properly.
 
   // ---------- MAP WIDGET ----------
   const mapToggle = document.getElementById('mapToggle');
