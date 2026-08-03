@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=5" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="description" content="Tâm Smile Dental Clinic - Nha Khoa hiện đại hàng đầu. Cấy ghép Implant, Niềng răng, Tẩy trắng răng với công nghệ tiên tiến và đội ngũ bác sĩ giàu kinh nghiệm." />
+  <meta name="keywords" content="nha khoa, dental clinic, implant, niềng răng, tẩy trắng, Tâm Smile" />
+  <meta name="robots" content="index, follow" />
+  <title>Nha Khoa Trẻ Em - Nha Khoa Tâm Smile</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/logo.png" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ========== PAGE LOADER ========== -->
+  <div class="page-loader" id="pageLoader">
+    <div class="loader-spinner"></div>
+  </div>
+
+  <!-- ========== HEADER / NAVBAR ========== -->
+  <header class="header" id="header">
+    <div class="container">
+      <a href="#" class="logo" id="logo">
+        <img src="assets/images/logo.png" alt="Tâm Smile Dental Clinic Logo" />
+        <div class="logo-text">
+          Tâm Smile
+          <small>Dental Clinic</small>
+        </div>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html#home">Trang Chủ</a>
+                <div class="nav-dropdown">
+          <a href="index.html#services" style="display:flex; align-items:center; gap:4px;">
+            Dịch Vụ
+            <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M7 10l5 5 5-5z"/></svg>
+          </a>
+          <div class="dropdown-content">
+            <a href="service-implant.html">Cấy Ghép Implant</a>
+            <a href="service-caovoirang.html">Cạo Vôi Răng An Toàn</a>
+            <a href="service-taytrangrang.html">Tẩy Trắng Răng</a>
+            <a href="service-veneer.html">Mặt Dán Sứ Veneer</a>
+            <a href="service-tongquat.html">Điều Trị Tổng Quát</a>
+            <a href="service-treem.html">Nha Khoa Trẻ Em</a>
+          </div>
+        </div>
+        <a href="index.html#about">Về Chúng Tôi</a>
+        <a href="index.html#doctors">Bác Sĩ</a>
+        <a href="index.html#testimonials">Đánh Giá</a>
+        <a href="javascript:void(0)" class="btn-primary btn-pulse" onclick="openBookingModal()">
+          <svg viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2zM9 14H7v-2h2v2zm4 0h-2v-2h2v2zm4 0h-2v-2h2v2zm-8 4H7v-2h2v2zm4 0h-2v-2h2v2zm4 0h-2v-2h2v2z"/></svg>
+          Đặt Lịch Hẹn
+        </a>
+      </nav>
+
+      <div class="nav-overlay" id="navOverlay"></div>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+    <section class="service-page-hero">
+    <div class="container text-center">
+      <h1>Nha Khoa Trẻ Em</h1>
+    </div>
+  </section>
+    <section>
+    <div class="service-page-content">
+      <div id="service-content">
+        <h2>Nha Khoa Trẻ Em - Chăm Sóc Nụ Cười Của Bé Từ Những Chiếc Răng Đầu Tiên</h2>
+                <div class="service-hero-img">
+          <img src="assets/images/service_pediatric.jpg" alt="Nha Khoa Trẻ Em - Nha Khoa Tâm Smile" loading="lazy">
+        </div>
+        <p>Hàm răng sữa đóng vai trò cực kỳ quan trọng không chỉ trong việc ăn nhai, phát âm mà còn định hướng cho răng vĩnh viễn mọc đúng vị trí sau này. Việc chăm sóc răng miệng cho trẻ từ sớm sẽ giúp bé có một nụ cười khỏe đẹp và ngăn ngừa các khiếm khuyết về răng hàm mặt trong tương lai.</p>
+        
+        <h3>Các Dịch Vụ Nha Khoa Trẻ Em Tại Tâm Smile</h3>
+        
+        <h4>1. Khám Định Kỳ & Hướng Dẫn Vệ Sinh Răng Miệng</h4>
+        <p>Bác sĩ sẽ kiểm tra quá trình mọc răng của bé, phát hiện sớm nguy cơ sâu răng hay sai lệch khớp cắn. Đồng thời, hướng dẫn phụ huynh và các bé cách chải răng đúng chuẩn, sử dụng chỉ nha khoa an toàn.</p>
+
+        <h4>2. Trám Răng Sữa Còng Ngừa Sâu Răng</h4>
+        <p>Các rãnh trên bề mặt răng hàm của bé rất dễ đọng thức ăn. Bác sĩ sẽ sử dụng vật liệu Sealant (chất trám bít hố rãnh) phủ lên bề mặt răng để ngăn ngừa vi khuẩn tấn công, hoặc trám lại các lỗ sâu đã hình thành.</p>
+
+        <h4>3. Nhổ Răng Sữa</h4>
+        <p>Khi răng sữa đến tuổi thay đã lung lay hoặc răng vĩnh viễn đã mọc chồi lên nhưng răng sữa chưa rụng, việc nhổ răng sữa kịp thời sẽ giúp răng mới mọc đều đặn hơn. Bác sĩ thực hiện nhẹ nhàng, có bôi tê bề mặt giúp bé hoàn toàn không đau và không sợ hãi.</p>
+
+        <h4>4. Bôi Fluoride Ngừa Sâu Răng</h4>
+        <p>Vecni Fluoride được bôi trực tiếp lên bề mặt răng, giúp tái khoáng men răng, làm răng chắc khỏe và chống lại sự tấn công của axit gây sâu răng. Đây là phương pháp dự phòng sâu răng cực kỳ hiệu quả cho trẻ.</p>
+
+        <h4>5. Tiền Chỉnh Nha (Chỉnh Nha Sớm)</h4>
+        <p>Với các bé từ 6 - 12 tuổi có dấu hiệu hô, móm, răng mọc chen chúc, bác sĩ có thể sử dụng các khí cụ chỉnh nha tháo lắp (như hàm Trainer) để định hướng sự phát triển của xương hàm và răng, giảm thiểu sự phức tạp nếu phải niềng răng sau này.</p>
+
+        <h3>Trải Nghiệm Thoải Mái Cho Bé Tại Tâm Smile</h3>
+        <p>Hiểu được tâm lý e ngại của trẻ nhỏ, Tâm Smile xây dựng không gian phòng khám thân thiện. Đội ngũ bác sĩ chuyên khoa Nhi vô cùng tâm lý, kiên nhẫn, sử dụng kỹ thuật "Tell - Show - Do" (Nói - Chỉ - Làm) giúp bé an tâm hợp tác mà không hề mang lại cảm giác sợ hãi "sợ đi nha sĩ".</p>
+      </div>
+            <div class="service-cta">
+        <a href="#booking" class="btn-primary" onclick="document.getElementById('bookingModal').classList.add('active'); return false;">Đặt lịch ngay</a>
+        <a href="index.html" class="btn-outline">Về trang chủ</a>
+      </div>
+    </div>
+  </section>
+<footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Footer Brand -->
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <img src="assets/images/logo.png" alt="Tâm Smile Logo" style="height:42px" />
+            <div class="logo-text">
+              Tâm Smile
+              <small>Dental Clinic</small>
+            </div>
+          </a>
+          <p>Nha khoa hiện đại hàng đầu với sứ mệnh mang đến nụ cười tự tin và cuộc sống trọn vẹn cho mỗi khách hàng.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook">
+              <svg viewBox="0 0 24 24"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/></svg>
+            </a>
+            <a href="#" aria-label="Instagram">
+              <svg viewBox="0 0 24 24"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"/></svg>
+            </a>
+            <a href="#" aria-label="YouTube">
+              <svg viewBox="0 0 24 24"><path d="M10 15l5.19-3L10 9v6m11.56-7.83c.13.47.22 1.1.28 1.9.07.8.1 1.49.1 2.09L22 12c0 2.19-.16 3.8-.44 4.83-.25.9-.83 1.48-1.73 1.73-.47.13-1.33.22-2.65.28-1.3.07-2.49.1-3.59.1L12 19c-4.19 0-6.8-.16-7.83-.44-.9-.25-1.48-.83-1.73-1.73-.13-.47-.22-1.1-.28-1.9-.07-.8-.1-1.49-.1-2.09L2 12c0-2.19.16-3.8.44-4.83.25-.9.83-1.48 1.73-1.73.47-.13 1.33-.22 2.65-.28 1.3-.07 2.49-.1 3.59-.1L12 5c4.19 0 6.8.16 7.83.44.9.25 1.48.83 1.73 1.73z"/></svg>
+            </a>
+            <a href="#" aria-label="TikTok">
+              <svg viewBox="0 0 24 24"><path d="M16.6 5.82s.51.5 0 0A4.278 4.278 0 0 1 15.54 3h-3.09v12.4a2.592 2.592 0 0 1-2.59 2.5c-1.42 0-2.6-1.16-2.6-2.6 0-1.72 1.66-3.01 3.37-2.48V9.66c-3.45-.46-6.47 2.22-6.47 5.64 0 3.33 2.76 5.7 5.69 5.7 3.14 0 5.69-2.55 5.69-5.7V9.01a7.35 7.35 0 0 0 4.3 1.38V7.3s-1.88.09-3.24-1.48z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Footer Links -->
+        <div class="footer-col">
+          <h4>Dịch Vụ</h4>
+          <ul>
+            <li><a href="#">Cấy Ghép Implant</a></li>
+            <li><a href="#">Cạo Vôi Răng</a></li>
+            <li><a href="#">Tẩy Trắng Răng</a></li>
+            <li><a href="#">Mặt Dán Sứ Veneer</a></li>
+            <li><a href="#">Nha Khoa Trẻ Em</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Giờ Làm Việc</h4>
+          <ul>
+            <li><a href="#">
+              <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+              T2 - T7: 8:00 - 19:00
+            </a></li>
+            <li><a href="#">
+              <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+              CN: 8:00 - 17:00
+            </a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Liên Hệ</h4>
+          <ul>
+            <li><a href="https://www.google.com/maps/place/Nha+khoa+T%C3%A2m+Smile/@10.8814154,106.6793066,16.64z/data=!4m6!3m5!1s0x3174d79c68778569:0x769b9454afc70d18!8m2!3d10.881241!4d106.6792664!16s%2Fg%2F11xf14426_?entry=ttu" target="_blank">
+              <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+              607 Hà Huy Giáp, Q.12, TP.HCM
+            </a></li>
+            <li><a href="tel:+84348580031">
+              <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+              034 858 0031
+            </a></li>
+            <li><a href="https://zalo.me/0348580031" target="_blank">
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/></svg>
+              Zalo: 034 858 0031
+            </a></li>
+            <li><a href="mailto:cskh@nhakhoatamsmile.com">
+              <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+              cskh@nhakhoatamsmile.com
+            </a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2024 Tâm Smile Dental Clinic. All rights reserved.</p>
+        <p>Designed with ❤️ by <a href="#">Tâm Smile Team</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== FLOATING ZALO BUTTON ========== -->
+  <a href="https://zalo.me/0348580031" target="_blank" class="zalo-float" id="zaloFloat" aria-label="Chat Zalo">
+    <svg viewBox="0 0 48 48" width="28" height="28">
+      <path fill="#0068FF" d="M24 4.5c-10.7 0-19.5 8.8-19.5 19.5 0 5.4 2.2 10.3 5.7 13.9l-2 5.9c-.3 1 1 1.9 1.9 1.4l6.1-3.6c2.4 1.2 5 1.9 7.8 1.9 10.7 0 19.5-8.8 19.5-19.5S34.7 4.5 24 4.5z"/>
+      <text x="24" y="30" text-anchor="middle" font-size="16" font-weight="bold" fill="white" font-family="Arial, sans-serif">Zalo</text>
+    </svg>
+  </a>
+
+  <!-- ========== FLOATING MAP WIDGET ========== -->
+  <div class="map-widget" id="mapWidget">
+    <button class="map-widget-toggle" id="mapToggle" aria-label="Xem bản đồ">
+      <svg viewBox="0 0 24 24" width="20" height="20"><path fill="white" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+      <span>Bản đồ</span>
+    </button>
+    <div class="map-widget-panel" id="mapPanel">
+      <div class="map-widget-header">
+        <div class="map-widget-info">
+          <strong>Tâm Smile Dental Clinic</strong>
+          <div class="map-widget-stars">
+            <span>★★★★★</span>
+            <span class="map-rating">5.0</span>
+          </div>
+          <p>607 Hà Huy Giáp, An Phú Đông, Quận 12, TP.HCM</p>
+        </div>
+        <button class="map-widget-close" id="mapClose" aria-label="Đóng bản đồ">✕</button>
+      </div>
+      <div class="map-widget-iframe">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1959.2!2d106.6792664!3d10.881241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d79c68778569%3A0x769b9454afc70d18!2sNha%20khoa%20T%C3%A2m%20Smile!5e0!3m2!1svi!2s!4v1700000000000" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <a href="https://www.google.com/maps/place/Nha+khoa+T%C3%A2m+Smile/@10.8814154,106.6793066,16.64z/data=!4m6!3m5!1s0x3174d79c68778569:0x769b9454afc70d18!8m2!3d10.881241!4d106.6792664!16s%2Fg%2F11xf14426_?entry=ttu" target="_blank" class="map-widget-directions">
+        <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M21.71 11.29l-9-9a.996.996 0 0 0-1.41 0l-9 9a.996.996 0 0 0 0 1.41l9 9c.39.39 1.02.39 1.41 0l9-9a.996.996 0 0 0 0-1.41zM14 14.5V12h-4v3H8v-4c0-.55.45-1 1-1h5V7.5l3.5 3.5-3.5 3.5z"/></svg>
+        Xem đánh giá & Chỉ đường
+      </a>
+    </div>
+  </div>
+
+  <!-- ========== BOOKING MODAL ========== -->
+  <div class="booking-overlay" id="bookingOverlay"></div>
+  <div class="booking-modal" id="bookingModal">
+    <button class="booking-modal-close" id="bookingClose" aria-label="Đóng">
+      <svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+    </button>
+    <div class="booking-modal-header">
+      <div class="booking-modal-icon">
+        <svg viewBox="0 0 24 24" width="32" height="32"><path fill="white" d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2zM9 14H7v-2h2v2zm4 0h-2v-2h2v2zm4 0h-2v-2h2v2zm-8 4H7v-2h2v2zm4 0h-2v-2h2v2zm4 0h-2v-2h2v2z"/></svg>
+      </div>
+      <h2>Đặt Lịch Khám</h2>
+      <p>Điền thông tin bên dưới, chúng tôi sẽ liên hệ xác nhận trong thời gian sớm nhất.</p>
+    </div>
+    <form id="bookingForm" action="https://formsubmit.co/nguyenthicamly6407@gmail.com" method="POST">
+      <!-- FormSubmit config -->
+      <input type="hidden" name="_cc" value="thohuynh403@gmail.com">
+      <input type="hidden" name="_subject" value="[Booking] - Bạn có lịch hẹn mới từ website Tâm Smile">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_next" id="formNextUrl">
+      <input type="text" name="_honey" style="display:none">
+      <input type="hidden" name="Thông báo" value="Vừa có bệnh nhân đặt lịch khám nội dung như sau :">
+
+      <div class="form-group">
+        <label for="bookingName">
+          <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+          Họ và Tên <span class="required">*</span>
+        </label>
+        <input type="text" id="bookingName" name="Họ và Tên" placeholder="Nguyễn Văn A" required>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="bookingYear">
+            <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm3.5-9c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8 14 8.67 14 9.5s.67 1.5 1.5 1.5zm-7 0c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11zm3.5 6.5c2.33 0 4.31-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5z"/></svg>
+            Năm Sinh <span class="required">*</span>
+          </label>
+          <input type="number" id="bookingYear" name="Năm Sinh" placeholder="1990" min="1920" max="2025" required>
+        </div>
+        <div class="form-group">
+          <label for="bookingDate">
+            <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10z"/></svg>
+            Ngày Khám <span class="required">*</span>
+          </label>
+          <input type="date" id="bookingDate" name="Ngày Khám" required>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="bookingPhone">
+          <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+          Số Điện Thoại <span class="required">*</span>
+        </label>
+        <input type="tel" id="bookingPhone" name="Số Điện Thoại" placeholder="0348 580 031" required>
+      </div>
+
+      <div class="form-group">
+        <label for="bookingNotes">
+          <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34a.9959.9959 0 0 0-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/></svg>
+          Ghi Chú
+        </label>
+        <textarea id="bookingNotes" name="Ghi Chú" rows="3" placeholder="Triệu chứng, dịch vụ quan tâm, hoặc yêu cầu đặc biệt..."></textarea>
+      </div>
+
+      <button type="submit" class="btn-primary btn-submit" id="bookingSubmit">
+        <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z"/></svg>
+        Xác Nhận Đặt Lịch
+      </button>
+    </form>
+    <div class="booking-success" id="bookingSuccess" style="display:none;">
+      <div class="success-icon">
+        <svg viewBox="0 0 24 24" width="64" height="64"><path fill="#2cb742" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+      </div>
+      <h3>Đặt Lịch Thành Công! 🎉</h3>
+      <p>Cảm ơn bạn đã tin tưởng Tâm Smile. Chúng tôi sẽ liên hệ xác nhận lịch hẹn trong thời gian sớm nhất.</p>
+      <button class="btn-primary" onclick="closeBookingModal()">Đóng</button>
+    </div>
+  </div>
+
+  <!-- ========== JAVASCRIPT ========== -->
+  <script src="script.js"></script>
+</body>
+</html>

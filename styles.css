@@ -2182,3 +2182,263 @@ ul { list-style: none; }
   }
 }
 
+
+/* Dropdown Menu */
+.nav-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: -20px;
+  background-color: var(--white);
+  min-width: 280px;
+  box-shadow: var(--shadow-lg);
+  z-index: 1000;
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 0.5rem 0;
+}
+
+.dropdown-content a {
+  color: var(--gray-600) !important;
+  padding: 12px 20px !important;
+  text-decoration: none;
+  display: block;
+  font-size: 0.95rem !important;
+  font-weight: 500 !important;
+  border-bottom: 1px solid var(--gray-100);
+}
+
+.dropdown-content a:last-child {
+  border-bottom: none;
+}
+
+.dropdown-content a::after {
+  display: none !important;
+}
+
+.dropdown-content a:hover {
+  background-color: var(--gray-50);
+  color: var(--primary) !important;
+  padding-left: 24px !important;
+  transition: all 0.3s ease;
+}
+
+.nav-dropdown:hover .dropdown-content {
+  display: block;
+  animation: fadeInDown 0.3s ease;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 1024px) {
+  .nav-dropdown {
+    width: 100%;
+  }
+  .dropdown-content {
+    position: static;
+    display: none;
+    box-shadow: none;
+    background-color: transparent;
+    padding-left: 1rem;
+    border-radius: 0;
+    margin-top: 0;
+    border-bottom: 1px solid var(--gray-100);
+  }
+  .dropdown-content a {
+    border-bottom: none !important;
+    padding: 10px 0 !important;
+  }
+  .nav-dropdown:hover .dropdown-content {
+    display: block;
+  }
+}
+
+/* ============================================
+   SERVICE DETAIL PAGES - RESPONSIVE & APPLE
+   ============================================ */
+
+/* Service page content styling */
+.service-page-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  line-height: 1.9;
+  font-size: 1.05rem;
+  text-align: justify;
+  -webkit-text-size-adjust: 100%;
+}
+
+.service-page-content h2 {
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  text-align: left;
+}
+
+.service-page-content h3 {
+  color: var(--primary-color);
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.35rem;
+  text-align: left;
+}
+
+.service-page-content h4 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  text-align: left;
+}
+
+.service-page-content p {
+  margin-bottom: 1rem;
+}
+
+.service-page-content ul,
+.service-page-content ol {
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.service-page-content li {
+  margin-bottom: 0.5rem;
+}
+
+.service-hero-img {
+  margin: 2rem 0;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
+
+.service-hero-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-height: 450px;
+  object-fit: cover;
+}
+
+.service-cta {
+  text-align: center;
+  margin-top: 3rem;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.service-page-hero {
+  min-height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba(255,255,255,0.92), rgba(240,253,244,0.85));
+  padding-top: 100px;
+  padding-bottom: 2rem;
+}
+
+.service-page-hero h1 {
+  color: var(--primary-color);
+  font-size: 2.2rem;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+/* iPad */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .service-page-content {
+    padding: 2rem 2.5rem;
+    font-size: 1.08rem;
+  }
+  .service-page-hero h1 {
+    font-size: 2rem;
+  }
+  .service-hero-img img {
+    max-height: 400px;
+  }
+}
+
+/* iPhone / small mobile */
+@media (max-width: 767px) {
+  .service-page-hero {
+    min-height: 20vh;
+    padding-top: 80px;
+    padding-bottom: 1.5rem;
+  }
+  .service-page-hero h1 {
+    font-size: 1.5rem;
+    padding: 0 1rem;
+  }
+  .service-page-content {
+    padding: 1.5rem 1rem;
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+  .service-page-content h2 {
+    font-size: 1.4rem;
+  }
+  .service-page-content h3 {
+    font-size: 1.15rem;
+    margin-top: 2rem;
+  }
+  .service-page-content h4 {
+    font-size: 1.05rem;
+  }
+  .service-hero-img {
+    margin: 1.5rem -1rem;
+    border-radius: 0;
+  }
+  .service-hero-img img {
+    max-height: 220px;
+  }
+  .service-cta {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  .service-cta a {
+    width: 100%;
+    max-width: 300px;
+    justify-content: center;
+  }
+}
+
+/* iPhone SE & small screens */
+@media (max-width: 375px) {
+  .service-page-hero h1 {
+    font-size: 1.3rem;
+  }
+  .service-page-content {
+    font-size: 0.95rem;
+  }
+}
+
+/* Apple iOS touch optimizations */
+@supports (-webkit-touch-callout: none) {
+  .service-page-content a,
+  .service-cta a {
+    -webkit-tap-highlight-color: transparent;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+  }
+  .service-page-content {
+    -webkit-overflow-scrolling: touch;
+  }
+}
