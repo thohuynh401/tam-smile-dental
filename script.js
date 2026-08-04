@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
       pageLoader.classList.add('loaded');
       // Remove loader from DOM after animation
       setTimeout(() => pageLoader.remove(), 500);
-    }, 400);
+    }, 3000); // Changed to 3s for better effect observation
   });
 
   // ---------- STICKY HEADER ----------
