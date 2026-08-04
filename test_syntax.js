@@ -1,5 +1,5 @@
 /* ============================================
-   TÂM SMILE DENTAL CLINIC - JavaScript
+   TÃM SMILE DENTAL CLINIC - JavaScript
    Premium Interactions & Animations
    ============================================ */
 
@@ -166,7 +166,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const updateSlider = (index) => {
       currentSlide = index;
-      track.style.transform = `translateX(-${currentSlide * 100}%)`;
+      track.style.transform = 	ranslateX(-${currentSlide * 100}%);
 
       dots.forEach((dot, i) => {
         dot.classList.toggle('active', i === currentSlide);
