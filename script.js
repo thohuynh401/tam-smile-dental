@@ -34,19 +34,26 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('scroll', handleScroll, { passive: true });
 
   // ---------- MOBILE MENU ----------
-  const menuToggle = document.getElementById('menuToggle');
+    const menuToggle = document.getElementById('menuToggle');
   const navLinks = document.getElementById('navLinks');
   const navOverlay = document.getElementById('navOverlay');
-
-  const toggleMenu = () => {
-    menuToggle.classList.toggle('active');
-    navLinks.classList.toggle('open');
-    navOverlay.classList.toggle('open');
-    document.body.style.overflow = navLinks.classList.contains('open') ? 'hidden' : '';
-  };
-
-  menuToggle.addEventListener('click', toggleMenu);
-  navOverlay.addEventListener('click', toggleMenu);
+  if (menuToggle && navLinks && navOverlay) {
+    const toggleMenu = () => {
+      menuToggle.classList.toggle('active');
+      navLinks.classList.toggle('open');
+      navOverlay.classList.toggle('open');
+      document.body.style.overflow = navLinks.classList.contains('open') ? 'hidden' : '';
+    };
+    menuToggle.addEventListener('click', toggleMenu);
+    navOverlay.addEventListener('click', toggleMenu);
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        if (navLinks.classList.contains('open')) {
+          toggleMenu();
+        }
+      });
+    });
+  }
 
   // Close menu on link click
   navLinks.querySelectorAll('a').forEach(link => {
@@ -278,7 +285,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // ---------- BOOKING MODAL ----------
+    // ---------- BOOKING MODAL ----------
   const bookingModal = document.getElementById('bookingModal');
   const bookingOverlay = document.getElementById('bookingOverlay');
   const bookingClose = document.getElementById('bookingClose');
@@ -287,45 +294,40 @@ document.addEventListener('DOMContentLoaded', () => {
   const bookingDateInput = document.getElementById('bookingDate');
   const formNextUrl = document.getElementById('formNextUrl');
 
-  // Set min date to today
-  if (bookingDateInput) {
-    const today = new Date().toISOString().split('T')[0];
-    bookingDateInput.setAttribute('min', today);
-  }
-
-  // Set form redirect URL
-  if (formNextUrl) {
-    formNextUrl.value = window.location.href;
-  }
-
-  window.openBookingModal = () => {
-    bookingModal.classList.add('open');
-    bookingOverlay.classList.add('open');
-    document.body.style.overflow = 'hidden';
-    // Reset form when opening
-    bookingForm.style.display = '';
-    bookingSuccess.style.display = 'none';
-  };
-
-  window.closeBookingModal = () => {
-    bookingModal.classList.remove('open');
-    bookingOverlay.classList.remove('open');
-    document.body.style.overflow = '';
-  };
-
-  bookingClose.addEventListener('click', closeBookingModal);
-  bookingOverlay.addEventListener('click', closeBookingModal);
-
-  // Close modal on Escape key
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && bookingModal.classList.contains('open')) {
-      closeBookingModal();
+  if (bookingModal && bookingOverlay) {
+    if (bookingDateInput) {
+      const today = new Date().toISOString().split('T')[0];
+      bookingDateInput.setAttribute('min', today);
     }
-  });
+    if (formNextUrl) {
+      formNextUrl.value = window.location.href;
+    }
+    window.openBookingModal = () => {
+      bookingModal.classList.add('open');
+      bookingOverlay.classList.add('open');
+      document.body.style.overflow = 'hidden';
+      if (bookingForm) bookingForm.style.display = '';
+      if (bookingSuccess) bookingSuccess.style.display = 'none';
+    };
+    window.closeBookingModal = () => {
+      bookingModal.classList.remove('open');
+      bookingOverlay.classList.remove('open');
+      document.body.style.overflow = '';
+    };
+    if (bookingClose) bookingClose.addEventListener('click', closeBookingModal);
+    bookingOverlay.addEventListener('click', closeBookingModal);
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && bookingModal.classList.contains('open')) {
+        closeBookingModal();
+      }
+    });
+  } else {
+    window.openBookingModal = () => {
+        console.error("Booking modal elements not found on this page.");
+    };
+  }
 
-  // Form submission uses native HTML form action to support Formsubmit activation and captcha properly.
-
-  // ---------- MAP WIDGET ----------
+// ---------- MAP WIDGET ----------
   const mapToggle = document.getElementById('mapToggle');
   const mapPanel = document.getElementById('mapPanel');
   const mapClose = document.getElementById('mapClose');
