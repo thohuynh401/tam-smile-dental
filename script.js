@@ -229,13 +229,9 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     startAutoplay();
-  }};
+  }
 
-  startAutoplay();
-
-
-
-  // ---------- ACTIVE NAV LINK HIGHLIGHT ----------
+// ---------- ACTIVE NAV LINK HIGHLIGHT ----------
   const sections = document.querySelectorAll('section[id]');
 
   const highlightNav = () => {
