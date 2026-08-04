@@ -1695,7 +1695,7 @@ ul { list-style: none; }
 .page-loader {
   position: fixed;
   inset: 0;
-  background: var(--white);
+  background: #d7d5ce;
   z-index: 9999;
   display: flex;
   align-items: center;
