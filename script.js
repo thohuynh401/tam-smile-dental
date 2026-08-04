@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const pageLoader = document.getElementById('pageLoader');
   window.addEventListener('load', () => {
     const isHomePage = window.location.pathname === '/' || window.location.pathname.endsWith('index.html');
-    const delay = isHomePage ? 2000 : 0;
+    const delay = isHomePage ? 1800 : 0;
     
     setTimeout(() => {
       pageLoader.classList.add('loaded');
