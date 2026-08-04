@@ -8,11 +8,14 @@ document.addEventListener('DOMContentLoaded', () => {
   // ---------- PAGE LOADER ----------
   const pageLoader = document.getElementById('pageLoader');
   window.addEventListener('load', () => {
+    const isHomePage = window.location.pathname === '/' || window.location.pathname.endsWith('index.html');
+    const delay = isHomePage ? 3000 : 0;
+    
     setTimeout(() => {
       pageLoader.classList.add('loaded');
       // Remove loader from DOM after animation
       setTimeout(() => pageLoader.remove(), 500);
-    }, 1500); // 1.5s display time
+    }, delay);
   });
 
   // ---------- STICKY HEADER ----------
