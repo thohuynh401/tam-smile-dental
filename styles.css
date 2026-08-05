@@ -2447,3 +2447,152 @@ ul { list-style: none; }
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+/* ========== BEFORE & AFTER SLIDER ========== */
+.results-section {
+  padding: var(--section-padding) 0;
+  background-color: var(--white);
+}
+
+.ba-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+@media (min-width: 768px) {
+  .ba-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.ba-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ba-title {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  color: var(--text-dark);
+}
+
+.ba-slider {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+}
+
+.ba-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ba-image-before-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  border-right: 2px solid var(--white);
+}
+
+/* Ensure the before image stays full width of the parent container */
+.ba-image-before-wrapper .ba-image {
+  width: 200%; /* If wrapper is 50%, image must be 200% to match parent width */
+  max-width: none;
+}
+
+/* Fix: instead of width: 200%, it's easier to use clip-path or use a fixed width matching the container */
+/* Better approach: wrapper has width: 50%. The image inside it must have width equal to the *outer* container */
+.ba-image-before-wrapper {
+  /* This method uses clip-path to reveal, much simpler! */
+  width: 100%;
+  clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
+  border: none; 
+}
+
+/* Range Input overlay */
+.ba-range {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  opacity: 0; /* Hidden but interactive */
+  cursor: ew-resize;
+  z-index: 20;
+}
+
+/* Slider Handle Line */
+.ba-handle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  background-color: var(--white);
+  transform: translateX(-50%);
+  z-index: 10;
+  pointer-events: none;
+}
+
+.ba-handle::after {
+  content: '< >';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--primary-color);
+  color: var(--white);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: -1px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  border: 2px solid var(--white);
+}
+
+/* Labels */
+.ba-label {
+  position: absolute;
+  bottom: 1rem;
+  padding: 0.25rem 0.75rem;
+  background: rgba(0, 0, 0, 0.6);
+  color: var(--white);
+  font-size: 0.875rem;
+  border-radius: var(--radius-sm);
+  z-index: 5;
+  pointer-events: none;
+  font-weight: 500;
+}
+.label-before { left: 1rem; }
+.label-after { right: 1rem; }
+
+/* Cover for yellow text in Image 2 */
+.ba-cover-yellow {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 30%;
+  height: 25%;
+  background: linear-gradient(to top right, rgba(0,0,0,0.5), transparent);
+  z-index: 4;
+  pointer-events: none;
+}

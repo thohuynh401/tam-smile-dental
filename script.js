@@ -337,5 +337,21 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // ---------- BEFORE & AFTER SLIDER ----------
+  const baSliders = document.querySelectorAll('.ba-slider');
+  baSliders.forEach(slider => {
+    const range = slider.querySelector('.ba-range');
+    const beforeWrapper = slider.querySelector('.ba-image-before-wrapper');
+    const handle = slider.querySelector('.ba-handle');
+
+    if (range && beforeWrapper && handle) {
+      range.addEventListener('input', (e) => {
+        const val = e.target.value;
+        beforeWrapper.style.clipPath = `polygon(0 0, ` + val + `% 0, ` + val + `% 100%, 0 100%)`;
+        handle.style.left = val + '%';
+      });
+    }
+  });
+
 });
 
